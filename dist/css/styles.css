@@ -1,41 +1,41 @@
 @font-face {
-  font-family: "Raleway";
-  src: url("/src/assets/fonts/Raleway-ExtraBold.woff2") format("woff2");
+  font-family: 'Raleway';
+  src: url('../assets/fonts/Raleway-ExtraBold.woff2') format('woff2');
   font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Lato";
-  src: url("/src/assets/fonts/Lato-Regular.woff2") format("woff2");
+  font-family: 'Lato';
+  src: url('../assets/fonts/Lato-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Lato";
-  src: url("/src/assets/fonts/Lato-Medium.woff2") format("woff2");
+  font-family: 'Lato';
+  src: url('../assets/fonts/Lato-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Lato";
-  src: url("/src/assets/fonts/Lato-SemiBold.woff2") format("woff2");
+  font-family: 'Lato';
+  src: url('../assets/fonts/Lato-SemiBold.woff2') format('woff2');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Lato";
-  src: url("/src/assets/fonts/Lato-Bold.woff2") format("woff2");
+  font-family: 'Lato';
+  src: url('../assets/fonts/Lato-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Lato";
-  src: url("/src/assets/fonts/Lato-ExtraBold.woff2") format("woff2");
+  font-family: 'Lato';
+  src: url('../assets/fonts/Lato-ExtraBold.woff2') format('woff2');
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -47,7 +47,7 @@
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 400;
   color: black;
 }
@@ -124,7 +124,7 @@ textarea {
   justify-content: space-between;
 }
 .header__logo {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 28px;
   text-transform: uppercase;
@@ -179,8 +179,9 @@ textarea {
 .header .burger.active span {
   background: transparent;
 }
-.header .burger.active::before, .header .burger.active::after {
-  content: "";
+.header .burger.active::before,
+.header .burger.active::after {
+  content: '';
   position: absolute;
   top: 50%;
   left: 0;
@@ -227,7 +228,7 @@ textarea {
 }
 
 .hero {
-  background-image: url("/src/assets/images/hero-bg.png");
+  background-image: url('../assets/images/hero-bg.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -309,10 +310,10 @@ textarea {
   padding-bottom: 150px;
 }
 .order::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
-  background-image: url("/src/assets/images/form-bg.png");
+  background-image: url('../assets/images/form-bg.png');
   background-size: cover;
   background-position: center;
   opacity: 0.1;
@@ -350,8 +351,8 @@ textarea {
   position: relative;
 }
 .order__steps-item::after {
-  content: "";
-  background-image: url(/src/assets/images/icons/dots.svg);
+  content: '';
+  background-image: url(../assets/images/icons/dots.svg);
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
@@ -489,7 +490,8 @@ textarea {
   border-color: transparent;
   color: transparent;
 }
-.order__range-input::-ms-fill-lower, .order__range-input::-ms-fill-upper {
+.order__range-input::-ms-fill-lower,
+.order__range-input::-ms-fill-upper {
   background: #ccc;
   border: 1px solid #ffffff;
   border-radius: 10px;
@@ -576,7 +578,9 @@ textarea {
   scrollbar-color: #3e9cdc #3d4050;
   /* Force radius in Firefox */
 }
-.order .custom-select__list::-webkit-scrollbar, .order .custom-select__list::-webkit-scrollbar-track, .order .custom-select__list::-webkit-scrollbar-thumb {
+.order .custom-select__list::-webkit-scrollbar,
+.order .custom-select__list::-webkit-scrollbar-track,
+.order .custom-select__list::-webkit-scrollbar-thumb {
   border-radius: 3px;
 }
 .order .custom-select.selected .custom-select__selected {
@@ -589,7 +593,11 @@ textarea {
   border-right: 1px solid #3d4050;
   border-top: 1px solid #3d4050;
 }
-.order .custom-select.selected .custom-select__selected .custom-select__arrow path {
+.order
+  .custom-select.selected
+  .custom-select__selected
+  .custom-select__arrow
+  path {
   fill: #ffffff;
 }
 .order .custom-select.selected .custom-select__list {
@@ -614,14 +622,19 @@ textarea {
   font-size: 18px;
   line-height: 34px;
 }
-.order .custom-select.selected .custom-select__list .custom-select__item:active {
+.order
+  .custom-select.selected
+  .custom-select__list
+  .custom-select__item:active {
   color: #42a9ed;
 }
 @media (max-width: 991px) {
-  .order .custom-select, .order__input {
+  .order .custom-select,
+  .order__input {
     width: calc(50% - 15px);
   }
-  .order__file, .order__range {
+  .order__file,
+  .order__range {
     width: 100%;
   }
   .order__title {
@@ -649,7 +662,8 @@ textarea {
   }
 }
 @media (max-width: 576px) {
-  .order .custom-select, .order__input {
+  .order .custom-select,
+  .order__input {
     width: 100%;
   }
   .order__steps {
@@ -690,8 +704,9 @@ textarea {
   align-items: center;
   gap: 38px;
 }
-.footer__payments::before, .footer__payments::after {
-  content: "";
+.footer__payments::before,
+.footer__payments::after {
+  content: '';
   background-color: #c3c3c3;
   width: 1px;
   height: 18px;
@@ -726,14 +741,16 @@ textarea {
   .footer__copy {
     text-align: center;
   }
-  .footer__payments, .footer__links {
+  .footer__payments,
+  .footer__links {
     gap: 20px;
   }
   .footer__payments {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .footer__payments::before, .footer__payments::after {
+  .footer__payments::before,
+  .footer__payments::after {
     content: none;
   }
 }
